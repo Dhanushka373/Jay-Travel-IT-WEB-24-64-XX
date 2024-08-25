@@ -1,0 +1,697 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" intddegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        .nerko-one-regular {
+            font-family: "Nerko One", cursive;
+            font-weight: 400;
+            font-style: normal;
+            
+        }
+
+        .wrapper-details{
+            font-family: "Nerko One", cursive;
+            font-weight: 400;
+            font-style: normal;
+            color:rgb(249, 96, 1);
+            text-align: center;
+            padding-top: 60px;
+            
+
+            
+        }
+
+
+        
+
+        .cusContainer {
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        @media (min-width: 576px) {
+            .cusContainer {
+                max-width: 540px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .cusContainer {
+                max-width: 720px;
+            }
+        }
+
+        @media (min-width: 992px) {
+        .cusContainer {
+            max-width: 960px;
+        }
+        }
+
+        @media (min-width: 1200px) {
+        .cusContainer {
+            max-width: 1488px;
+        }
+        }
+
+        .main-logo{
+            font-size: 30px;
+            font-weight: bold;
+            color: rgb(249, 96, 1);
+        }
+
+        .home-color{
+            color:rgb(249, 96, 1);
+        }
+        
+        .main-image{
+            height: 600px;
+        }
+
+        .main-image img{
+            height: 600px;
+            object-fit: cover;
+        }
+
+        .first-topic{
+            color:rgb(249, 96, 1);
+        }
+
+        .main-para{
+            align-items: center;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .leader-image{
+            height: 100px;
+            
+            
+            
+        }
+
+        .team-sections{
+            padding-left: 100px;
+        }
+        
+        .leader-name{
+            padding-left: 70px;
+        }
+
+        .sub-wrapper{
+            height: 200px;
+            background-color: rgb(14, 2, 48);
+        }
+
+        .sub-wrapper-details{
+            color: white;
+            font-family: sans-serif;
+        }
+
+        .therd-head{
+            color: rgb(249, 96, 1);
+        }
+
+        .details-card {
+            padding-left: 200px;
+        }
+
+        .contact-form{
+            padding-left: 200px;
+        }
+
+        .site-footer
+{
+  background-color:#26272b;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#ffffff;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.dribbble:hover
+{
+  background-color:#ea4c89
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+
+    .site-footer{
+        padding-left: 20px;
+    }
+
+    .copyright-text{
+       padding-left: 350px;
+    }
+        
+
+       
+
+     
+
+        
+
+       
+    </style>
+  </head>
+  <body>
+    <div class="w-100 bg-dark">
+        <div class="cusContainer">
+            <header class="row">
+                <div class="col-md-12 my-header">
+                    <nav class="navbar navbar-expand-lg navbar-dark">
+                        <div class="container-fluid">
+                          <a class="navbar-brand  main-logo" href="#">JAY TOURS</a>
+                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                            <ul class="navbar-nav  mb-2 mb-lg-0">
+                              <li class="nav-item home-color">
+                                <a class="nav-link active " aria-current="page" href="#"><span class="home-color">HOME</span></a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link text-white" href="#">ABOUT</a>
+                              </li>
+    
+                              <li class="nav-item">
+                                <a class="nav-link text-white" href="#">SERVICES</a>
+                              </li>
+    
+                              <li class="nav-item">
+                                <a class="nav-link text-white" href="#">TESTIMONIALS</a>
+                              </li>
+
+                              <li class="nav-item">
+                                <a class="nav-link text-white" href="#">PORTFOLIO</a>
+                              </li>
+                              
+                              <li class="nav-item">
+                                <a class="nav-link text-white" href="#">CONTACTS</a>
+                              </li>
+                             
+                            </ul>
+                          </div>
+                        </div>
+                      </nav>
+                </div>
+    
+            </header>  
+        </div>
+    </div>
+
+    <div class="cusContainer-1">
+        <div class="row">
+            <div class="col-md-12 ">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel ">
+                    <div class="carousel-inner main-image">
+                      <div class="carousel-item active">
+                        <img src="/Images/main.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="container mt-5">
+        <div class="row">
+            <div class="col-md-12"> 
+                <div class="d-flex justify-content-center first-topic">
+                    <h1>TOP DESTINATIONS</h1>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="container mt-5">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card" >
+                    <img src="/Images/Top Destinations/Sri Lanka.jpg" class="card-img-top" alt="Sri lanka">
+                    <div class="card-body" >
+                        <div class="srilanka d-flex justify-content-center">
+                            <h5 class="card-title">SRI LANKA</h5>
+                        </div>
+                     
+    
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card" >
+                    <img src="/Images/Top Destinations/Rome.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <div class="srilanka d-flex justify-content-center">
+                        <h5 class="card-title">ROME</h5>
+                      </div>
+    
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card" >
+                    <img src="/Images/Top Destinations/Maldives.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <div>
+                        <div class="srilanka d-flex justify-content-center">
+                            <h5 class="card-title">MALDIVES</h5>
+                          </div>
+                      </div>
+    
+                    </div>
+                  </div>
+            </div>
+
+
+            <div class="col-md-3">
+                <div class="card" >
+                    <img src="/Images/Top Destinations/Switzerland.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="srilanka d-flex justify-content-center">
+                            <h5 class="card-title">SWITZERLAND</h5>
+                        </div>
+    
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mt-5">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="d-flex justify-content-center first-topic">
+                    <h1>TOP DESTINATIONS</h1>
+                    
+
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <section class="para-container">
+        <div class="row">
+            <div class="col-md-12">
+               <div class="main-para">
+                    <p>
+                        Teamwork is the ability to work together toward a common vision.The ability to direct <br>
+                        individual accomplishment toward organizational objectives.it is the fuel that allows <br>
+                        common people to attain uncommon result.
+                    </p>
+               </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container team-sections mt-3">
+        <div class="row">
+            <div class="col-md-4 team-member">
+                <img src="/Images/Team Leaders/Hugo Silva.jpg" alt="Hugo Silva">
+
+                <div class="leader-name">
+                    <h4>Hugo Silva</h4>
+                </div>
+                
+               
+                
+            </div>
+
+            <div class="col-md-4 team-member">
+                <img src="/Images/Team Leaders/Imanoli Arias.jpg" alt="Hugo Silva">
+
+                <div class="leader-name">
+                    <h4>Imonali Arias</h4> 
+                </div>
+                
+            </div>
+
+            <div class="col-md-4 team-member">
+                <img src="/Images/Team Leaders/Javier Bardem.jpg" alt="Hugo Silva">
+                <div class="leader-name">
+                    <h4>Javier Bardem</h4>
+                </div>
+
+                
+            </div>
+        </div>
+    </section>
+
+    <section class=" sub-wrapper mt-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 wrapper-details">
+                    <h1>250 K +</h1>
+                    <div class="sub-wrapper-details">
+                        <p>HAPPY CLIENTS</p>
+                    </div>
+                </div>
+
+
+                <div class="col-md-3 wrapper-details">
+                    <h1>800</h1>
+
+                    <div class="sub-wrapper-details">
+                        <p>WEEKLY RESERVATIONS</p>
+                    </div>
+                </div>
+
+
+                <div class="col-md-3 wrapper-details">
+                    <h1>150</h1>
+
+                    <div class="sub-wrapper-details">
+                        <p>TRAVEL PARTNER</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 wrapper-details">
+                    <h1>15</h1>
+
+                    <div class="sub-wrapper-details">
+                        <p>BRANCHES</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container mt-5 ">
+        <div  class="row">
+            <div class="col-md-12">
+                <div class="d-flex justify-content-center therd-head">
+                    <h1>OVERHEAD FROM TRAVELERS</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="details-card mt-5">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card text-center mb-3" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Special title treatment</h5>
+                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+
+                  
+            </div>
+
+
+            <div class="col-md-4">
+                <div class="card text-center mb-3" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Special title treatment</h5>
+                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+
+                  
+            </div>
+
+            <div class="col-md-4">
+                <div class="card text-center mb-3" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Special title treatment</h5>
+                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+
+                  
+            </div>  
+        </div>
+    </section>
+
+    <section class="container mt-5">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="d-flex justify-content-center therd-head">
+                    <h1>CONTACT US</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="row">
+            <div class="col-md-10">
+                <div class="contact-form">
+                    <form action="#" method="POST">
+
+                    
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" name="message" rows="4" placeholder="Share your experience or queries" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100" style="background-color: orangered; border: none;">Submit</button>
+                    </form>
+                </div>
+               
+                
+            </div>
+        </div>
+    </section>
+    
+    <section class=" footer-web mt-5" >
+          <!-- Site footer -->
+    <footer class="site-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-2">
+                <h6>HELP</h6>
+                <br>
+                <p>Help center</p>
+                <p>FAQs</p>
+                <p>Team of Use</p>
+            </div>
+
+            <div class="col-md-2">
+                <h6>ABOUT US</h6>
+                <br>
+                <p>Blog</p>
+                <p>Careers</p>
+            </div>
+
+            <div class="col-md-2">
+                <h6>DISTINATION</h6>
+                <br>
+                <p>Countries</p>
+                <p>Cities</p>
+            </div>
+
+            <div class="col-md-2">
+                <h6>PARTNER WITH US</h6>
+                <br>
+                <p>Propertice</p>
+                <p>Afiliates</p>
+            </div>
+          </div>
+          <hr>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-sm-6 col-xs-12">
+                <div class="d-flex justify-content-center">
+                    <p class="copyright-text">Copyright @2020 - SLIIT WEB DEVELOPMENT-All right reserved 
+                
+                    </p>
+                </div>
+                    
+                
+            </div>
+  
+            
+          </div>
+        </div>
+  </footer>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
